@@ -1,7 +1,9 @@
-<!-- this template will be render when user is login because in this case user will able to like any of 
-the post and see how may like a post contains -->
+<!-- this template will be render when user is not login because in this case user cannt able to like any of 
+the post only he can see the post and see how may like a post contains -->
 {% extends "layout.html" %}
 {% block content %}
+<!-- going to print post -->
+  
     {% for post in posts.items %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
@@ -12,25 +14,11 @@ the post and see how may like a post contains -->
             </div>
             <h2><a class="article-title" href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></h2>
             <p class="article-content">{{ post.content }}</p>
-                {{likelist[post.id -1]}}
-            {% if upvote == [] %}
-                <a href = "{{url_for('like_post' , post_id = post.id , user_id = current_user.id)}}"> 
-                <i class="fa fa-thumbs-o-up" aria-hidden="true" style = "color : black ;border : 0px"></i>
-                </a>
-            {% else %}
-                {% if post.id in upvote%}
-                  <i class="fa fa-thumbs-up" style = "color:red ; border:0px ;"></i>
-                {% else %}
-                  <a href = "{{url_for('like_post' , post_id = post.id , user_id = current_user.id)}}"> 
-                <i class="fa fa-thumbs-o-up" aria-hidden="true" style = "color : black ;border : 0px"></i>
-                </a>
-                
-                {% endif %}
-
-                
-            {% endif %}
+            {{likelist[post.id - 1]}}
+            <i class="fa fa-thumbs-up" style = "color:red ; border:0px ;"></i>
           </div>
         </article>
+       
     {% endfor %}
 
   <!-- this part contains pagination where numbers will be like page no 1 and last page will be printed
