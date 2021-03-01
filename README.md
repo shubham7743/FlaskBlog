@@ -55,5 +55,25 @@ pip install flask-serialize
  ```
 >Open your browser and the site can be found running at http://127.0.0.1:5000/ 
 
-**Home page**
+****
+****
+**Login Page**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590392437.png)
+
+**Registration Page**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590327249.png)
+
+**Upon successful account creation**
 ![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590297394.png)
+
+**Home page for a logged -in user. Here all the posts are displayed.**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590532424.png)
+
+**Account page for a user**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590507876.png)
+
+**New post creation for users**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590466105.png)
+
+**Users can also update or delete posts**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590600820.png)
