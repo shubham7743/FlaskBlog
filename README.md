@@ -1,3 +1,4 @@
+
 # FlaskBlog
 FlaskBlog is a simple yet more than a basic blog website built using FLask.
 
@@ -53,4 +54,5 @@ pip install flask-serialize
  python run.py
  ```
 >Open your browser and the site can be found running at http://127.0.0.1:5000/ 
- 
+
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590297394.png)
