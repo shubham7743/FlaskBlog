@@ -1,3 +1,4 @@
+
 # FlaskBlog
 FlaskBlog is a simple yet more than a basic blog website built using FLask.
 
@@ -21,21 +22,14 @@ Scripts\activate
 ```
 
 ****
-## Installing dependencies
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies in blog directory.
-```bash
-python -m pip install --upgrade pip	// to update pip
-pip install flask
-pip install Flask-wtf
-pip install flask-sqlalchemy
-pip install flask-bcrypt
-python -m pip install --upgrade pip	// to update pip
-python -m pip install --no-use-pep517 bcrypt // if bcrypt show error
-pip install flask-login
-pip install email_validator
-pip install Pillow
-pip install flask-mail
-pip install flask-serialize
+**Install the dependencies**
+```
+pip install -r requirements.txt
+``` 
+****
+**To list the installed packages**
+```
+pip freeze
 ```
 ****
 ## Build the Database
@@ -53,4 +47,26 @@ pip install flask-serialize
  python run.py
  ```
 >Open your browser and the site can be found running at http://127.0.0.1:5000/ 
- 
+
+****
+****
+**Login Page**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590392437.png)
+
+**Registration Page**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590327249.png)
+
+**Upon successful account creation**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590297394.png)
+
+**Home page for a logged -in user. Here all the posts are displayed.**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590532424.png)
+
+**Account page for a user**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590507876.png)
+
+**New post creation for users**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590466105.png)
+
+**Users can also update or delete posts**
+![](https://github.com/shubham7743/FlaskBlog/blob/main/images/1614590600820.png)
