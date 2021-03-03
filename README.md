@@ -22,6 +22,16 @@ Scripts\activate
 ```
 
 ****
+**Install the dependencies**
+```
+pip install -r requirements.txt
+``` 
+****
+**To list the installed packages**
+```
+pip freeze
+```
+****
 ## Build the Database
 **Build the datbase in blog directory. Write the following in terminal**
 ```bash
