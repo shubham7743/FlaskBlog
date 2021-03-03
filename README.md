@@ -22,23 +22,6 @@ Scripts\activate
 ```
 
 ****
-## Installing dependencies
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install dependencies in blog directory.
-```bash
-python -m pip install --upgrade pip	// to update pip
-pip install flask
-pip install Flask-wtf
-pip install flask-sqlalchemy
-pip install flask-bcrypt
-python -m pip install --upgrade pip	// to update pip
-python -m pip install --no-use-pep517 bcrypt // if bcrypt show error
-pip install flask-login
-pip install email_validator
-pip install Pillow
-pip install flask-mail
-pip install flask-serialize
-```
-****
 ## Build the Database
 **Build the datbase in blog directory. Write the following in terminal**
 ```bash
